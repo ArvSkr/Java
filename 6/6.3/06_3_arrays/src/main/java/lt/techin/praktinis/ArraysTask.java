@@ -11,20 +11,21 @@ public class ArraysTask {
 
         int[] arr = {3, 2, 1, 4, 6, 5};
 
-//        int[] arrWithRemovedElement = removeElementAndReturnNewArray(arr, 1);
-//        System.out.println(Arrays.toString(arrWithRemovedElement));
+     int[] arrWithRemovedElement = removeElementAndReturnNewArray(arr, 1);
+       System.out.println(Arrays.toString(arrWithRemovedElement));
 
     }
 
     // Parašykite metodą, kuris sukuria nustatyto dydžio sveikųjų skaičių masyvą
     // ir užpildo jį atsitiktinai sugeneruotais skaičiais iš nurodyto intervalo.
     public static int[] generateRandomArray(int size, int min, int max) {
-        int[] array = new int[size];
-        for (int i = 0; i < size; i++) {
-            int[] a = new int[(int) Math.random() * 100];
-            array = a;
+
+            int[] array = new int[size];
+            for (int i = 0; i < size; i++) {
+                array[i] = (int) (Math.random() * (max - min + 1)) + min;
+            }
+            return array;
         }
-        return array;
     }
 
 
@@ -32,8 +33,14 @@ public class ArraysTask {
     //surašant reikiamus elementus į naują masyvą b[n-1]. Metodas grąžina naują masyvą.
     //Jei k yra už masyvo ribų, metodas grąžina null (teisingiau būtų mesti exception, bet dar nesimokėm)
     public static int[] removeElementAndReturnNewArray(int[] arr, int k) {
-        //TODO
-        return null;
+        if (k < 0 || k >= arr.length) return null;
+        int[] newArr = new int[arr.length - 1];
+        for (int i = 0, j = 0; i < arr.length; i++) {
+            if (i != k) {
+                newArr[j++] = arr[i];
+            }
+        }
+        return newArr;
     }
 
     //Parašykite metodą, kuris įterptų į masyvą arr[n] prieš k-tąjį elementą reikšmę x,
@@ -58,3 +65,4 @@ public class ArraysTask {
 
 
 }
+
