@@ -34,7 +34,7 @@ public class AgeOfTheOldest {
 
 
         if (oldestAge != -1) {
-            System.out.println(oldestAge);
+            System.out.println("Age of the oldest: " + oldestAge);
         }
     }
 }
