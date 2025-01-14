@@ -12,7 +12,7 @@ public class PersonalDetails {
         int longestNameLength = 0;
         ArrayList<Integer> birthYears = new ArrayList<>();
         int count = 0;
-        
+
 
         while (true) {
             String input = scanner.nextLine();
