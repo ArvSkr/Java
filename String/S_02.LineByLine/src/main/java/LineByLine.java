@@ -6,15 +6,30 @@ public class LineByLine {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String text = scanner.nextLine();
-        String[] myArray = text.split(" ");
-        for (int i = 0; i < myArray.length; i++) {
-            System.out.println(myArray[i]);
-            if (scanner.hasNextLine() && scanner.nextLine().isEmpty()) {
+        while (true) {
+
+            String input = scanner.nextLine();
+
+
+            if (input.isEmpty()) {
                 break;
             }
 
+
+            String[] parts = input.split("\\s+");
+            ArrayList<String> list = new ArrayList<>();
+            for (String part : parts) {
+                list.add(part);
+            }
+
+            
+            for (String part : list) {
+                System.out.println(part);
+            }
         }
+
+
+
 
 
     }
