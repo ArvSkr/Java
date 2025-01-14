@@ -10,13 +10,14 @@ public class ArraysTask {
         // Pateiktas masyvas ir pavyzdys programos patikrinimui. Masyvo elementų reikšmes galite keisti.
 
         int[] arr = {3, 2, 1, 4, 6, 5};
-        int[] generator = generateRandomArray(4,2,10);
-        int[] removerElement = removeElementAndReturnNewArray(arr, 10);
-        int [] Elementinserter = insertElementAndReturnNewArray(arr,4,6);
-        int[] reverser = reverseArray(arr);
-        int[] reverserinplace = reverseInPlace(arr);
+        int[] randomnum = generateRandomArray(10, 4, 5);
+
+        int[] inserter = insertElementAndReturnNewArray(arr, 1, 10);
+        int[] reversearr = reverseArray(arr);
+
         int[] arrWithRemovedElement = removeElementAndReturnNewArray(arr, 1);
         System.out.println(Arrays.toString(arrWithRemovedElement));
+
 
     }
 
@@ -28,7 +29,8 @@ public class ArraysTask {
             array[i] = (int) (Math.random() * (max - min + 1)) + min;
         }
         return array;
-    }
+
+
     }
 
 
@@ -44,7 +46,7 @@ public class ArraysTask {
             }
         }
         return newArr;
-        return null;
+
     }
 
     //Parašykite metodą, kuris įterptų į masyvą arr[n] prieš k-tąjį elementą reikšmę x,
@@ -61,7 +63,6 @@ public class ArraysTask {
             }
         }
         return newArr;
-
     }
 
     //Parašykite metodą, kuris grąžintų duoto masyvo apverstą kopija.
@@ -71,18 +72,17 @@ public class ArraysTask {
             reversed[i] = arr[arr.length - 1 - i];
         }
         return reversed;
-        return null;
     }
 
     //Parašykite metodą, kuris apverstu duotą masyvą (nekuriant naujo masyvo)
     public static void reverseInPlace(int[] arr) {
+
         for (int i = 0; i < arr.length / 2; i++) {
             int temp = arr[i];
             arr[i] = arr[arr.length - 1 - i];
             arr[arr.length - 1 - i] = temp;
+
         }
 
     }
-
-
 }
