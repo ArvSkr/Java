@@ -14,9 +14,14 @@ public class ArraysTask {
 
         int[] inserter = insertElementAndReturnNewArray(arr, 1, 10);
         int[] reversearr = reverseArray(arr);
+        reverseInPlace(arr);
 
+        System.out.println("Reversed array in place: " + Arrays.toString(arr));
         int[] arrWithRemovedElement = removeElementAndReturnNewArray(arr, 1);
         System.out.println(Arrays.toString(arrWithRemovedElement));
+        System.out.println(Arrays.toString(randomnum));
+        System.out.println(Arrays.toString(inserter));
+        System.out.println(Arrays.toString(reversearr));
 
 
     }
