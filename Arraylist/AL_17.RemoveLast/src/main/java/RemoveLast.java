@@ -24,5 +24,6 @@ public class RemoveLast {
                 strings.remove(strings.get(i));
             }
         }
+        
     }
 }

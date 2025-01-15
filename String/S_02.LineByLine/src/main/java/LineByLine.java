@@ -22,15 +22,13 @@ public class LineByLine {
                 list.add(part);
             }
 
-            
+
             for (String part : list) {
                 System.out.println(part);
             }
         }
 
 
-
-
-
     }
 }
+
