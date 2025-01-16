@@ -4,17 +4,17 @@ public class Main {
     public static void main(String[] args) {
 
         PaymentCard petesCard = new PaymentCard(10.0);
-        System.out.println("Money: " + petesCard.balance());
+        System.out.println("money: " + petesCard.balance());
 
 
         boolean wasSuccessful = petesCard.takeMoney(8.0);
         System.out.println("Successfully withdrew: " + wasSuccessful);
-        System.out.println("Money: " + petesCard.balance());
+        System.out.println("money: " + petesCard.balance());
 
 
         wasSuccessful = petesCard.takeMoney(4.0);
         System.out.println("Successfully withdrew: " + wasSuccessful);
-        System.out.println("Money: " + petesCard.balance());
+        System.out.println("money: " + petesCard.balance());
 
 
         PaymentTerminal unicafeExactus = new PaymentTerminal();
@@ -24,7 +24,7 @@ public class Main {
         charge = unicafeExactus.eatAffordably(2.5);
         System.out.println("Remaining change: " + charge);
 
-        charge = unicafeExactus.eatHearty(4.3);
+        charge = unicafeExactus.eatHeartily(4.3);
         System.out.println("Remaining change: " + charge);
 
 

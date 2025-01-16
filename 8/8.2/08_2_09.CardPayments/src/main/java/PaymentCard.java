@@ -9,11 +9,13 @@ public class PaymentCard {
 
 
     public double balance() {
+
         return this.balance;
     }
 
 
     public void addMoney(double amount) {
+
         this.balance += amount;
     }
 

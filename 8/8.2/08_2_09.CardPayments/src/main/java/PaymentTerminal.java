@@ -22,7 +22,7 @@ public class PaymentTerminal {
     }
 
 
-    public double eatHearty(double payment) {
+    public double eatHeartily(double payment) {
         double mealCost = 4.3;
         if (payment >= mealCost) {
             money += mealCost;
@@ -34,8 +34,11 @@ public class PaymentTerminal {
 
 
     public void addMoneyToCard(PaymentCard card, double amount) {
-        card.addMoney(amount);
-        money += amount;
+        if (amount > 0){
+            card.addMoney(amount);
+            money += amount;
+        }
+
     }
 
 
@@ -61,6 +64,6 @@ public class PaymentTerminal {
 
     @Override
     public String toString() {
-        return "Money: " + money + ", Number of sold affordable meals: " + affordableMeals + ", Number of sold hearty meals: " + heartyMeals;
+        return "money: " + money + ", number of sold affordable meals: " + affordableMeals + ", number of sold hearty meals: " + heartyMeals;
     }
 }
