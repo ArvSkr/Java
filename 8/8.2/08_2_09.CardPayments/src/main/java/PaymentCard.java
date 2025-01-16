@@ -3,6 +3,7 @@ public class PaymentCard {
 
 
     public PaymentCard(double balance) {
+
         this.balance = balance;
     }
 
