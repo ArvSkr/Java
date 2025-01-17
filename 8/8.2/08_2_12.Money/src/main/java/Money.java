@@ -22,15 +22,6 @@ public class Money {
         return this.cents;
     }
 
-    public String toString() {
-        String zero = "";
-        if (this.cents < 10) {
-            zero = "0";
-        }
-
-        return this.euros + "." + zero + this.cents + "e";
-    }
-
 
     public Money plus(Money addition) {
         int totalEuros = this.euros + addition.euros;
@@ -63,5 +54,15 @@ public class Money {
 
         int differenceCents = totalCents1 - totalCents2;
         return new Money(differenceCents / 100, differenceCents % 100);
+    }
+
+    @Override
+    public String toString() {
+        String zero = "";
+        if (this.cents < 10) {
+            zero = "0";
+        }
+
+        return this.euros + "." + zero + this.cents + "e";
     }
 }
