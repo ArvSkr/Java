@@ -3,16 +3,19 @@ public class PaymentCard {
 
 
     public PaymentCard(double balance) {
+
         this.balance = balance;
     }
 
 
     public double balance() {
+
         return this.balance;
     }
 
 
     public void addMoney(double amount) {
+
         this.balance += amount;
     }
 
