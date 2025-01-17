@@ -21,10 +21,5 @@ public class CheckingAccount extends Account {
         }
     }
 
-    public void checkifyoucandeposit(double deposit) {
 
-        if (deposit > 0) {
-            deposit(deposit);
-        }
-    }
 }
