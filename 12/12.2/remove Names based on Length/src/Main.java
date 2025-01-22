@@ -18,6 +18,6 @@ public class Main {
 
         System.out.println(nameremover.get());
 
-        names.forEach(System.out::println);
+        System.out.println(names);
     }
 }
