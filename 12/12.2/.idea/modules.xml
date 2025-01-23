@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/12.2.iml" filepath="$PROJECT_DIR$/.idea/12.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Append a Suffix/Append a Suffix.iml" filepath="$PROJECT_DIR$/Append a Suffix/Append a Suffix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Count Specific Items/Count Specific Items.iml" filepath="$PROJECT_DIR$/Count Specific Items/Count Specific Items.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Find and Remove Even Numbers/Find and Remove Even Numbers.iml" filepath="$PROJECT_DIR$/Find and Remove Even Numbers/Find and Remove Even Numbers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Modify Names/Modify Names.iml" filepath="$PROJECT_DIR$/Modify Names/Modify Names.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Remove Strings Containing Specific Characters/Remove Strings Containing Specific Characters.iml" filepath="$PROJECT_DIR$/Remove Strings Containing Specific Characters/Remove Strings Containing Specific Characters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Reverser/Reverser.iml" filepath="$PROJECT_DIR$/Reverser/Reverser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sorting by Last Character/Sorting by Last Character.iml" filepath="$PROJECT_DIR$/Sorting by Last Character/Sorting by Last Character.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Square Each Number/Square Each Number.iml" filepath="$PROJECT_DIR$/Square Each Number/Square Each Number.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Using forEach for Logging/Using forEach for Logging.iml" filepath="$PROJECT_DIR$/Using forEach for Logging/Using forEach for Logging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/remove Names based on Length/remove Names based on Length.iml" filepath="$PROJECT_DIR$/remove Names based on Length/remove Names based on Length.iml" />
+    </modules>
+  </component>
+</project>

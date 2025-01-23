@@ -6,21 +6,20 @@ public class Main {
 
         List<String> items = Arrays.asList("apple", "banana", "orange", "apple", "grape", "apple", "banana");
 
-        // Item to count
+
         String targetItem = "apple";
 
-        // Using forEach with a lambda to count specific item (e.g., "apple")
-        // Initialize the count variable
-        final int[] count = {0}; // Array used to hold the count (because variables inside lambdas must be final or effectively final)
 
-        // Lambda expression inside forEach to count the specific item
+        final int[] count = {0};
+
+
         items.forEach(item -> {
             if (item.equals(targetItem)) {
-                count[0]++;  // Increment count when the item matches the targetItem
+                count[0]++;
             }
         });
 
-        // Output the result
+
         System.out.println("The word " + targetItem + " appears " + count[0] + " times");
     }
 
