@@ -7,7 +7,8 @@ public class BooksFromFile {
 
     public static void main(String[] args) throws Exception {
         // Example usage
-        List<Book> books = readBooks("books.txt"); // Replace with the actual file path
+        List<Book> books = readBooks("src/books.txt");
+
         for (Book book : books) {
             System.out.println(book.getName() + ", " + book.getPublishingYear() +
                     ", " + book.getPagecount() + ", " + book.getAuthor());
