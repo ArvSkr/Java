@@ -18,7 +18,7 @@ public class AverageOfSelectedNumbers {
             numbers.add(number);
         }
 
-        System.out.println("Print the average of the negativ numbers or the positive numbers?" + "(n/p)");
+        System.out.println("Print the average of the negative numbers or the positive numbers?" + "(n/p)");
         String option = scanner.nextLine();
         if (option.equals("n")) {
             double average = numbers.stream()
